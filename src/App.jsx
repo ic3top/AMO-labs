@@ -3,7 +3,8 @@ import {Menu} from "./components/Menu";
 import {
   BrowserRouter,
   Routes,
-  Route, Navigate,
+  Route,
+  Navigate,
 } from 'react-router-dom';
 import {Lab1} from "./pages/lab1/Lab1";
 import {Lab2} from "./pages/lab2/Lab2";
@@ -11,6 +12,7 @@ import {Linear} from "./pages/lab1/Linear";
 import {Branched} from "./pages/lab1/Branched";
 import {Circular} from "./pages/lab1/Circular";
 import {Lab3} from "./pages/lab3/Lab3";
+import {Lab4} from "./pages/lab4/Lab4";
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
           </Route>
           <Route path="/lab-2" element={<Lab2 />} />
           <Route path="/lab-3" element={<Lab3 />} />
-          <Route path="/lab-4" element={null} />
+          <Route path="/lab-4" element={<Lab4 />} />
           <Route path="/lab-5" element={null} />
           <Route path="*" element={<Navigate to="/lab-1" replace />} />
         </Routes>
