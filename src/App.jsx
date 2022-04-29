@@ -13,6 +13,7 @@ import {Branched} from "./pages/lab1/Branched";
 import {Circular} from "./pages/lab1/Circular";
 import {Lab3} from "./pages/lab3/Lab3";
 import {Lab4} from "./pages/lab4/Lab4";
+import {Lab5} from "./pages/Lab5/Lab5";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           <Route path="/lab-2" element={<Lab2 />} />
           <Route path="/lab-3" element={<Lab3 />} />
           <Route path="/lab-4" element={<Lab4 />} />
-          <Route path="/lab-5" element={null} />
+          <Route path="/lab-5" element={<Lab5 />} />
           <Route path="*" element={<Navigate to="/lab-1" replace />} />
         </Routes>
       </div>
